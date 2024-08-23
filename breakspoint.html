@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Breakpoints dan Media Query</title>
+    <!-- Integrasi Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- CSS Kustom dengan Media Query -->
+    <style>
+        /* Ubah ukuran teks untuk layar kecil */
+        @media (max-width: 768px) {
+            body {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Sembunyikan sidebar di bawah 768px */
+        @media (max-width: 768px) {
+            aside {
+                display: none;
+            }
+        }
+
+        /* Ubah warna background header di layar besar */
+        @media (min-width: 992px) {
+            header {
+                background-color: #007bff; /* Ganti warna background header */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyWebsite</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="container-fluid bg-primary text-white text-center py-3">
+        <h1>Header</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </header>
+
+    <!-- Navigasi, Konten Utama, dan Sidebar -->
+    <div class="container my-4">
+        <div class="row">
+            <!-- Navigasi -->
+            <nav class="col-12 col-md-4 bg-light py-3">
+                <h2>Navigation</h2>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Konten Utama -->
+            <main class="col-md-8 bg-light py-3">
+                <h2>Konten Utama</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at odio sit amet ligula suscipit malesuada. Curabitur consequat semper magna, at placerat leo venenatis at.</p>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="col-md-4 bg-secondary text-white py-3">
+                <h2>Sidebar</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra, mauris at aliquet commodo, velit libero luctus arcu, vitae fermentum lectus orci non augue.</p>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-white text-center py-3">
+        <p>Footer</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet, justo non bibendum dignissim, libero metus gravida eros, eget ultricies erat sapien ut quam.</p>
+    </footer>
+
+    <!-- Integrasi JavaScript Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
